@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя библиотека</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main class="container">
+        <header class="top">
+            <div>
+                <p class="label">Лабораторная работа № 2</p>
+                <h1>Моя библиотека</h1>
+                <p class="subtitle">Простой список книг, который хранится в памяти</p>
+            </div>
+            <a class="button" href="/add.html">+ Добавить книгу</a>
+        </header>
+
+        <section class="panel">
+            <div class="section-title">
+                <h2>Книги</h2>
+                <span id="book-count" class="count">0 из 50</span>
+            </div>
+            <p id="message" class="message"></p>
+            <div id="book-list" class="book-list"></div>
+        </section>
+
+        <footer><a href="/docs">Открыть Swagger UI</a></footer>
+    </main>
+    <script src="/index.js"></script>
+</body>
+</html>

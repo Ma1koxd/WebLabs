@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить книгу</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main class="container small-container">
+        <a class="back-link" href="/">← Вернуться к списку</a>
+        <section class="panel">
+            <p class="label">Новая запись</p>
+            <h1>Добавить книгу</h1>
+
+            <form id="book-form">
+                <label for="name">Название</label>
+                <input id="name" name="name" maxlength="100" required>
+
+                <label for="author">Автор</label>
+                <input id="author" name="author" maxlength="100" required>
+
+                <label for="description">Описание</label>
+                <textarea id="description" name="description" maxlength="1000" required></textarea>
+
+                <p id="message" class="message"></p>
+                <button class="button" type="submit">Сохранить книгу</button>
+            </form>
+        </section>
+    </main>
+    <script src="/add.js"></script>
+</body>
+</html>
