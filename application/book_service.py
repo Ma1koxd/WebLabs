@@ -1,5 +1,5 @@
 from domain.book import Book
-from domain.book_repository import BookRepository
+from application.book_repository import BookRepository
 
 
 class BookService:

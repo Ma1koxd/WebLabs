@@ -4,7 +4,7 @@ from domain.book import Book
 
 
 class BookRepository(ABC):
-    """Описывает, что должно уметь хранилище книг."""
+    """Описывает операции хранилища, необходимые сервису книг."""
 
     @abstractmethod
     def get_all(self) -> list[Book]:
