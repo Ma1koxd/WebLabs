@@ -3,3 +3,8 @@ __pycache__/
 *.pyc
 .idea/
 .vscode/
+.env
+.pytest_cache/
+node_modules/
+dist/
+*.egg-info/
