@@ -1,8 +1,10 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, ConfigDict, Field
 
 
 class BookData(BaseModel):
     """Данные, которые пользователь вводит для книги."""
+
+    model_config = ConfigDict(str_strip_whitespace=True)
 
     name: str = Field(min_length=1, max_length=100, examples=["Маленький принц"])
     author: str = Field(min_length=1, max_length=100, examples=["Антуан де Сент-Экзюпери"])
@@ -21,3 +23,13 @@ class BookResponse(BookData):
 
 class MessageResponse(BaseModel):
     detail: str
+
+
+class TokenResponse(BaseModel):
+    access_token: str
+    token_type: str
+
+
+class UserResponse(BaseModel):
+    id: int
+    username: str

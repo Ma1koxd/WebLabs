@@ -12,6 +12,8 @@
         <section class="panel">
             <p class="label">Описание книги</p>
             <h1 id="page-title">Загрузка...</h1>
+            <p id="login-hint" hidden>Для изменения и удаления книги нужно <a href="/login.html">войти в аккаунт</a>.</p>
+            <p id="message" class="message" role="status"></p>
 
             <form id="book-form" hidden>
                 <label for="name">Название</label>
@@ -23,14 +25,14 @@
                 <label for="description">Описание</label>
                 <textarea id="description" name="description" maxlength="1000" required></textarea>
 
-                <p id="message" class="message"></p>
-                <div class="actions">
+                <div id="book-actions" class="actions" hidden>
                     <button class="button" type="submit">Сохранить изменения</button>
                     <button id="delete-button" class="button danger" type="button">Удалить книгу</button>
                 </div>
             </form>
         </section>
     </main>
+    <script src="/auth.js"></script>
     <script src="/details.js"></script>
 </body>
 </html>

@@ -12,8 +12,10 @@
         <section class="panel">
             <p class="label">Новая запись</p>
             <h1>Добавить книгу</h1>
+            <p id="login-hint" hidden>Нужно <a href="/login.html">войти в аккаунт</a>, чтобы добавить книгу.</p>
+            <p id="message" class="message" role="status"></p>
 
-            <form id="book-form">
+            <form id="book-form" hidden>
                 <label for="name">Название</label>
                 <input id="name" name="name" maxlength="100" required>
 
@@ -23,11 +25,11 @@
                 <label for="description">Описание</label>
                 <textarea id="description" name="description" maxlength="1000" required></textarea>
 
-                <p id="message" class="message"></p>
                 <button class="button" type="submit">Сохранить книгу</button>
             </form>
         </section>
     </main>
+    <script src="/auth.js"></script>
     <script src="/add.js"></script>
 </body>
 </html>

@@ -10,24 +10,31 @@
     <main class="container">
         <header class="top">
             <div>
-                <p class="label">Лабораторная работа № 2</p>
+                <p class="label">Лабораторная работа № 3</p>
                 <h1>Моя библиотека</h1>
-                <p class="subtitle">Простой список книг, который хранится в памяти</p>
+                <p class="subtitle">Книги сохраняются в базе данных PostgreSQL</p>
             </div>
-            <a class="button" href="/add.html">+ Добавить книгу</a>
+            <a id="add-link" class="button" href="/add.html" hidden>+ Добавить книгу</a>
         </header>
+
+        <div class="auth-bar">
+            <span id="auth-status">Проверяем вход...</span>
+            <a id="login-link" class="button" href="/login.html">Войти</a>
+            <button id="logout-button" class="button" type="button" hidden>Выйти</button>
+        </div>
 
         <section class="panel">
             <div class="section-title">
                 <h2>Книги</h2>
                 <span id="book-count" class="count">0 из 50</span>
             </div>
-            <p id="message" class="message"></p>
+            <p id="message" class="message" role="status"></p>
             <div id="book-list" class="book-list"></div>
         </section>
 
         <footer><a href="/docs">Открыть Swagger UI</a></footer>
     </main>
+    <script src="/auth.js"></script>
     <script src="/index.js"></script>
 </body>
 </html>

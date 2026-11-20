@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+[hidden] {
+    display: none !important;
+}
+
 body {
     margin: 0;
     background: #f2f4f8;
@@ -161,6 +165,24 @@ input:focus, textarea:focus {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+}
+
+.auth-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.auth-bar span {
+    flex-grow: 1;
+    color: #687080;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: wait;
 }
 
 .message {
